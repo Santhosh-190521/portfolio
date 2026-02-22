@@ -93,7 +93,7 @@ export default function Hero() {
                         <a href="#projects" className="btn btn-primary">
                             View Work <ArrowRight size={18} />
                         </a>
-                        <a href="/Santhosh_Vijayan_Resume.docx" download="Santhosh_Vijayan_Resume.docx" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <a href={`${import.meta.env.BASE_URL}Santhosh_Vijayan_Resume.docx`} download="Santhosh_Vijayan_Resume.docx" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                             <Download size={18} /> Resume
                         </a>
                         <a href="mailto:vijayansanthosh801@gmail.com" onClick={handleEmailClick} className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
