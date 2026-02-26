@@ -5,10 +5,12 @@ import { Mail, Send, Check } from 'lucide-react';
 export default function Contact() {
     const [copied, setCopied] = useState(false);
 
-    const handleEmailClick = () => {
+    const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
         navigator.clipboard.writeText('vijayansanthosh801@gmail.com');
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
+        window.open('https://mail.google.com/mail/?view=cm&fs=1&to=vijayansanthosh801@gmail.com', '_blank');
     };
 
     return (
