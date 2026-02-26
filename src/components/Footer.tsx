@@ -9,12 +9,10 @@ export default function Footer() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        e.preventDefault();
+    const handleEmailClick = () => {
         navigator.clipboard.writeText('vijayansanthosh801@gmail.com');
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
-        window.location.href = 'mailto:vijayansanthosh801@gmail.com';
     };
 
     return (
